@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+
+body
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1421986527537-888d998adb74?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 50px;
+}
+
+form {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container {
+  margin:0px auto;
+  width: 100%;
+  border-radius:6px;
+  margin-top: 3%;
+  background: white;
+  min-width: 350px;
+  width: 30%;
+  padding:30px;
+}
+
+
+.button
+{
+    position:relative;
+    margin: 0px auto;
+    left:50%;
+    right:50%;
+    transform: translate(-50%);
+    height: 34px;
+    width: 90px;
+    background-color: #5bc0de;
+    border-radius:  4px;
+    border:none;
+    
+}
+
+.tborder
+{
+  border: 1px solid #6b6b6b;
+  border-radius: 1px;
+  font-size: 18px;
+  margin-top:10px ;
+  height: 40px;
+  padding-left: 10px;
+}
+.tborder:focus
+{
+  border: 1px solid  rgb(165, 219, 253);
+
+}
+#signbtn
+{
+  width: 150px;
+  color: #ffffff;
+}
+#logbtn
+{
+  background-color: #4CAF50;
+  color: white ;
+}
+#logbtn:hover{
+  background-color: #45a049;
+}
+#signbtn:hover{
+  background-color: #46b8da;
+}
+
+.abcd {
+  background-color: rgba(161, 156, 156, 0.9);
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  width: 130px;
+}
+
+#log {
+  height: 50;
+  vertical-align: middle;
+  width: 50;
+  cursor: pointer;
+  text-align: center;
+}
+
+#brandname {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.container {
+  overflow: hidden;
+}
+
+input[type="text"] , input[type="password"] {
+  width: 100%;
+}
+
+.abcd:hover {
+  background-color:rgba(212, 151, 151, 0.664);
+}

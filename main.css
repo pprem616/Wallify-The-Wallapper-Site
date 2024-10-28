@@ -1,0 +1,788 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Lato", sans-serif;
+    overflow-x:hidden;
+  }
+
+  .aboutimg
+  {
+    position: fixed;
+  } 
+  .aboutcontent
+  {
+    background-color:rgb(255, 255, 255);
+    height:auto;
+    margin-top:2%;
+    padding-left:10px;
+    margin-left:22%;
+    margin-right:22%;
+    margin-bottom:8%;
+ 
+  }
+
+  .aboutcontent p{
+    font-size:22px;
+    line-height: 1.6;
+  }
+
+  .quicklink
+  {
+    float:right;
+    margin-right:3%;
+  }
+  .quicklink a{
+    font-size:20px;
+    padding:10px;
+  }
+
+  .contact
+  {
+    padding-left:32%;
+    
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.share-Dropdown
+{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  top: 60px;
+  right: 133px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 6;
+}
+
+.share-Dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+  .show {display: block;}
+
+  .sharebtn{
+    padding: 14px 18px;
+    font-size:22px;
+    color: white;
+    position: fixed;
+    cursor: pointer;
+    right: 150px;
+    background-color: transparent;
+    border: none;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  #next
+  {
+    height:40px; 
+    width:40px; 
+    background-color:rgba(95, 89, 89, 0.3);
+    position:fixed;
+    border:none;
+    right:0; 
+    top:45%;
+    margin-right:20px;
+    padding-top:5px;
+  }
+
+  #previous
+  {
+    height:40px; 
+    width:40px; 
+    background-color:rgba(95, 89, 89, 0.3);
+    border:none; 
+    position:fixed; 
+    left:0; 
+    top:45%;
+    margin-left:20px;
+    padding-top:5px;
+  }
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 21;
+    top: 0;
+    opacity: 1;
+    left: 0;
+    background-color: rgb(39, 58, 94);
+    box-shadow: 5px 20px 50px rgb(39, 58, 94) ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .navtext {
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+  }
+
+  #dbtn {
+    padding: 14px 18px;
+    font-size:22px;color: white;
+    position: fixed;
+    cursor: pointer;
+    right: 80px;
+    border: none;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  #dbtn:hover  {
+    color: rgb(54, 13, 13);
+    background-color: rgb(248, 203, 203);
+    cursor: pointer;
+   }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+    background-color: rgb(199, 162, 162);
+    text-decoration: none;
+    color: black;
+    box-shadow: 1px 1px 2px #5f5d5d;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    padding-left: 12px;
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-right: 12px;
+    background-color:tomato;
+    right: 0;
+  }
+
+
+  #menu {
+      position: absolute;
+      right: 15px;
+      visibility: hidden;
+      color: white;
+  }
+
+  .mynav {
+      background-color: rgb(82, 17, 17);
+      height: 45px;
+      background: rgba(228, 42, 42, 0.1) ;
+      width: 100%;
+      z-index: 2;
+      position: absolute;
+
+  }
+
+  #brand {
+      color: white;
+      font-size: 18px;
+      padding: 7px;
+      padding-right: 20px;
+      position: absolute;
+      z-index: 0;
+      padding-left: 20px;
+      float: left;
+      display: block;
+      margin-left: 5%;
+      text-align: center;
+      text-decoration: none;
+  }
+
+  #brand:hover {
+    color: white;
+    transition: 0.6s;
+    background:rgb(196, 116, 116, 0.6);
+    text-decoration: none;
+}
+
+
+.container-fluid {
+    background-color:white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.pcnav {
+    float: right;
+    margin-right: 5%;
+}
+
+.pcnav a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 9px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    transition: 0.6s;
+}
+
+.pcnav a:hover {
+    color: white;
+    background-color:rgb(54, 13, 13);
+    text-decoration: none;
+
+}
+
+#bgd {
+    min-width: 98vw;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-bottom: solid 1px;
+    box-shadow: 1px 8px 20px #666565;
+
+}
+
+.intro{
+    position: absolute;
+    top:13%;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+
+}
+
+#introheading{
+    color:rgb(255, 255, 255);
+    font-size: 32px;
+    line-height: 1.6;
+
+  }
+  .intro input
+  {
+      width:50vh;
+      height:50px;
+      padding-left: 15px;
+      margin: 0;
+      border:2px solid  rgb(39, 39, 39);
+  }
+
+  .search-container button {
+    width:50px;
+    height:50px;
+    border:2px solid rgb(39, 39, 39);
+    background-color: white;
+  }
+
+
+  .column {
+    flex: 25%;
+    padding: 0 4px;
+  }
+
+  .row {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .column img {
+    margin: 5px;
+    padding: 4px;
+    width: 100%;
+    vertical-align: middle;
+    transition: 1s;
+  }
+
+  .column img:hover {
+    box-shadow: 4px 4px 4px #444040;
+    transform: scale(1.02);
+  }
+
+  .trending .smalltrend {
+    font-size: 18px;
+    color: rgb(77, 78, 80);
+  }
+
+  .trending {
+      text-align: center;
+      font-size: 22px;
+      padding-bottom: 15px;
+  }
+
+  #category{
+    width:100%;
+    height:0;
+    position:absolute;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    top:45px;
+    z-index: 1;
+    box-shadow: 4px 4px 4px #444040;
+    background :rgb(51, 49, 49, 0.6);
+    transition: 1s;
+
+  }
+
+  .pctext.active {
+    background:rgb(51, 49, 49, 0.6);
+
+  }
+
+  .cname {
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cname li {
+    display: inline-block;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 15px;
+    padding: 14px;
+    transition: 0.6s;
+  }
+
+  #arrow {
+    float: right;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 20px;
+  }
+
+
+  .cname li:hover , .closeb:hover, #dbtn:hover, .sharebtn:hover  {
+    color: white;
+   background-color: rgb(196, 116, 116, 0.6);
+   cursor: pointer;
+  }
+
+  .foot{
+    color:rgb(12, 12, 12);
+    background-color: rgb(219, 219, 219) ;
+    top:600px;
+    padding: 5%;
+    margin-top: 3%;
+    padding-top:25px;
+    box-shadow: 1px 1px 2px 3px #444040;
+    height: auto;
+    width:100%;
+    overflow: hidden;
+    padding-bottom: 1%;
+
+  }
+
+  .foot p
+  {
+    font-size: 19px;
+  }
+
+  .row {
+    height: auto;
+    margin: 0;
+    padding:0 4px;
+  }
+
+  .container-fluid{
+    height: auto;
+    margin:auto;
+  }
+
+  .social img {
+    margin:10px;
+  }
+
+  #copy {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+    font-size: 17px;
+  }
+
+  .about {
+    float: left;
+    height: auto;
+  }
+
+  .social {
+    text-align: center;
+  }
+
+  .social img
+  {
+    transition: 0.7s;
+  }
+
+  .social img:hover{
+    transform: scale(1.3);
+  }
+
+  .popup
+  {
+    display: none;
+    position: fixed;
+    max-width: 100%;
+    padding-bottom: 5%;
+    text-align: center;
+    overflow: auto;
+    z-index:3;
+    background-color: black;
+    background: rgba(95, 89, 89, 0.9) ;
+  }
+
+  .closeb
+  {
+    color:white;
+    opacity: 1;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+    font-size: 38px;
+    padding:4px;
+    padding: 0 15px;
+    margin-right: 15px;
+
+  }
+
+
+  .popcontent
+  {
+    text-align: center;
+  }
+
+
+  .popcontent img{
+
+    box-shadow: 4px 4px 4px #444040;
+    max-width: 100%;
+    margin-top: 10%;
+    background-color: white;
+
+  }
+
+  .categcontent
+  {
+    display: none;
+  }
+
+  
+
+  .categlinks.cactive {
+  color: rgb(255, 255, 255);
+  background-color: rgb(196, 116, 116, 0.6);
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  @media screen and (max-width: 650px) {
+
+  
+    .aboutcontent
+  {
+    background-color:rgb(255, 255, 255);
+    height:auto;
+    margin-top:2%;
+    padding-left:10px;
+    margin-left:15%;
+    margin-right:15%;
+    margin-bottom:8%;
+    padding-top:5%;
+ 
+  }
+
+
+    #introheading
+    {
+      font-size:5px;
+    }
+    
+  .aboutcontent p{
+    font-size:19px;
+  }
+
+      
+
+    
+    #menu {
+        visibility: visible;
+    }
+
+    #brand {
+        margin: 0%;
+
+    }
+
+    .popcontent img{ 
+        margin-top: 15%;
+    }
+
+
+    .container-fluid{
+        margin: 0;
+        width: 100%;
+    }
+
+    .mynav {
+        margin: 0;
+
+    }
+
+    .pcnav {
+        visibility: hidden;
+    }
+
+    #bgd {
+        min-width: 95vw;
+        width: 100%;
+        height: 45vh;
+        object-fit: cover;
+  }
+
+  .intro input
+  {
+      width:30vh;
+      height:40px;
+      padding-left: 15px;
+      margin-right: 0;
+      border:2px solid  rgb(39, 39, 39);
+  }
+
+  .search-container button {
+    width:40px;
+    height:40px;
+    margin: 0;
+    padding: 0;
+    border:2px solid rgba(39, 39, 39);
+    background-color: white;
+  }
+
+  #introheading{
+    font-size: 23px;
+  }
+
+  .trending .smalltrend {
+    font-size: 13px;
+    color: rgb(77, 78, 80);
+  }
+
+  .column {
+    flex: 50%;
+    padding: 0 2px;
+  }
+
+  .column img{
+    margin: 2px;
+  }
+
+  .trending {
+      font-size: 20px;
+  }
+
+  .trending span {
+      font-size: 15px;
+      padding: 0;
+      margin: 0;
+  }
+  .navtext{
+    color:white;
+
+  }
+  #mcdropdwon
+  {
+    display: none;
+  }
+
+  @keyframes fade{
+    from{
+      height:0;
+      font-size: 0;
+      color:BLACK;
+
+    }
+    to{
+      height:31px;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+
+
+  .cnavtext
+  {
+    color:white;
+    font-size: 16px;
+    width: auto;
+    display: block;
+    padding:10px;
+    padding-left:75px;
+    background: rgb(116, 132, 160, 0.5);
+    text-decoration: none;
+    animation-name:fade;
+    animation-duration: 1s;
+  }
+
+  .closeb
+  {
+    color:white;
+    opacity: 1;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 4;
+    font-size: 38px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+
+  #copy {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+    font-size: 15px;
+  }
+
+}
+
+#username {
+    color: white;
+}
+
+#username:hover {
+    box-shadow: none;
+    background:rgb(82, 17, 17,0.01) ;
+    cursor: auto;
+}
+
+#brand {
+    color: rgb(255, 255, 255);
+    border-radius: 0px;
+}
+
+#brand:hover , .closebtn:hover {
+    color: white;
+    transition: 0.6s;
+    border-radius: 0;
+    text-decoration: none;
+   
+}
+
+.pcnav a:hover {
+    color: white;
+    background:rgb(196, 116, 116, 0.6);
+    text-decoration: none;
+}
+
+#s {
+  
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border: 1px black solid;
+    margin-right: 0;
+  }
+  
+#sb {
+  
+    margin-top: 8px;
+    width: 50px;
+    background: #ddd;
+    margin-left: 0;
+    font-size: 17px;
+    color: white;
+    border: 1px black solid;
+    cursor: pointer;
+    transform: translate(-10px,0px); 
+  }
+
+  #sb i {
+      color: black;
+  }
+  
+  #sba {
+      width: auto;
+      text-align: center;
+  }
+
+  #sb:hover {
+    background: #ccc;
+  }
+  
+  .container-fluid .row img {
+    border: 1px solid rgb(37, 37, 37);
+  }
+
+  .name {
+      position: absolute;
+      left: 10px;
+      width: 80%;
+      margin-bottom: 100px;
+      cursor: text;
+      padding: 5px;
+      top: 10px
+  }
+
+ #mlogout {
+     color: white;
+     background-color: rgb(39, 58, 94);
+ }
+
+ #mlogout:hover {
+    background-color: rgb(39, 58, 94);
+ }
+
+ #mlog {
+     background-color: tomato;
+     border: none;
+     color: white;
+ }
+
+ 
+ .popup
+ {
+   display: none;
+   width: 100%;
+   height:100%;
+   position: fixed;
+   text-align: center;
+   padding-bottom: 70px;
+   z-index:3;
+   background-color: black;
+   background: rgba(95, 89, 89, 0.9) ;
+ }
